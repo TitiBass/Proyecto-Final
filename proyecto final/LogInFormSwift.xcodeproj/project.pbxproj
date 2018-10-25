@@ -13,6 +13,11 @@
 		4786D5ED1D7C53E400150B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4786D5EC1D7C53E400150B2F /* Assets.xcassets */; };
 		4786D5F01D7C53E400150B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4786D5EE1D7C53E400150B2F /* LaunchScreen.storyboard */; };
 		4786D5F81D7C564100150B2F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4786D5F71D7C564100150B2F /* SecondViewController.swift */; };
+		ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */; };
+		ACD29944218260C4001B60C5 /* RegisterHorarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */; };
+		ACD29946218260EA001B60C5 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29945218260EA001B60C5 /* ToDoViewController.swift */; };
+		ACD29948218269B9001B60C5 /* Materias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29947218269B9001B60C5 /* Materias.swift */; };
+		ACD2994A21826C55001B60C5 /* HoraFiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */; };
 		FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5122F217A42B200438AA3 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		4786D5EF1D7C53E400150B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4786D5F11D7C53E400150B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4786D5F71D7C564100150B2F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHorarioViewController.swift; sourceTree = "<group>"; };
+		ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHorarioViewController.swift; sourceTree = "<group>"; };
+		ACD29945218260EA001B60C5 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		ACD29947218269B9001B60C5 /* Materias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materias.swift; sourceTree = "<group>"; };
+		ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoraFiTableViewCell.swift; sourceTree = "<group>"; };
 		FAB5122F217A42B200438AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +76,11 @@
 				4786D5EE1D7C53E400150B2F /* LaunchScreen.storyboard */,
 				4786D5F11D7C53E400150B2F /* Info.plist */,
 				FAB5122F217A42B200438AA3 /* RegisterViewController.swift */,
+				ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */,
+				ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */,
+				ACD29945218260EA001B60C5 /* ToDoViewController.swift */,
+				ACD29947218269B9001B60C5 /* Materias.swift */,
+				ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */,
 			);
 			path = LogInFormSwift;
 			sourceTree = "<group>";
@@ -146,8 +161,13 @@
 			files = (
 				4786D5F81D7C564100150B2F /* SecondViewController.swift in Sources */,
 				4786D5E81D7C53E400150B2F /* ViewController.swift in Sources */,
+				ACD2994A21826C55001B60C5 /* HoraFiTableViewCell.swift in Sources */,
+				ACD29944218260C4001B60C5 /* RegisterHorarioViewController.swift in Sources */,
 				4786D5E61D7C53E400150B2F /* AppDelegate.swift in Sources */,
+				ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */,
 				FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */,
+				ACD29946218260EA001B60C5 /* ToDoViewController.swift in Sources */,
+				ACD29948218269B9001B60C5 /* Materias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

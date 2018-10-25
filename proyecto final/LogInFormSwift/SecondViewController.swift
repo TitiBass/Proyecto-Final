@@ -8,11 +8,17 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+@IBOutlet weak var myTableView: UITableView!
+    
+    var productos = [horario]()
+    var shop = [horario]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        productos.append(horario(materia: "Calculo", profesor: "chapatin", grupo: "23", horario: "10 am", salon: "p101"))
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +26,26 @@ class SecondViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return productos.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "infomat", for: indexPath) as! HoraFiTableViewCell
+        
+        cell.labelCell.text = productos[indexPath.row].materia
+        return cell
+    }
+    
+ 
     func deleteAccount(){
         var array = ["1","2","3"]
         array.remove(at: 0)
+    }
+    @IBAction func unsegueSecondView(unwindSegue: UIStoryboardSegue){
+        
     }
 }
