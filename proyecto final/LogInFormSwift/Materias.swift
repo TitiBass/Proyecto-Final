@@ -10,7 +10,6 @@ import Foundation
 struct horario{
     var materia: String
     var profesor: String
-    var grupo: String
     var horario: String
     var salon: String
 

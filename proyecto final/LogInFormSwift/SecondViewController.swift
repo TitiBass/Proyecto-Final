@@ -12,13 +12,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 @IBOutlet weak var myTableView: UITableView!
     
-    var productos = [horario]()
+    var horariomateria = [horario]()
     var shop = [horario]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        productos.append(horario(materia: "Calculo", profesor: "chapatin", grupo: "23", horario: "10 am", salon: "p101"))
+        horariomateria.append(horario(materia: "Calculo", profesor: "chapatin", horario: "10 am", salon: "p101"))
         // Do any additional setup after loading the view.
     }
 
@@ -28,19 +28,28 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productos.count
+        return horariomateria.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "infomat", for: indexPath) as! HoraFiTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "horariofinal", for: indexPath) as! HoraFiTableViewCell
         
-        cell.labelCell.text = productos[indexPath.row].materia
+        cell.labelCell.text = horariomateria[indexPath.row].materia
         return cell
     }
     
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infomaterias" {
+            let indexPath = myTableView.indexPathForSelectedRow
+            let destino = segue.destination as! ShowHorarioViewController
+            destino.offisrtview = horariomateria[(indexPath?.row)!]
+            
+        }
+        }
+   
+    
     func deleteAccount(){
         var array = ["1","2","3"]
         array.remove(at: 0)

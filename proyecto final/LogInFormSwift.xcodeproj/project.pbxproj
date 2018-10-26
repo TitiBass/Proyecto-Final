@@ -18,6 +18,9 @@
 		ACD29946218260EA001B60C5 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29945218260EA001B60C5 /* ToDoViewController.swift */; };
 		ACD29948218269B9001B60C5 /* Materias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29947218269B9001B60C5 /* Materias.swift */; };
 		ACD2994A21826C55001B60C5 /* HoraFiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */; };
+		ACF532772183841B00C5CCE2 /* agendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF532762183841B00C5CCE2 /* agendaViewController.swift */; };
+		ACF532792183852F00C5CCE2 /* RegisterMatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */; };
+		ACF5327B21839B5300C5CCE2 /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5327A21839B5300C5CCE2 /* calendarViewController.swift */; };
 		FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5122F217A42B200438AA3 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		ACD29945218260EA001B60C5 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		ACD29947218269B9001B60C5 /* Materias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materias.swift; sourceTree = "<group>"; };
 		ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoraFiTableViewCell.swift; sourceTree = "<group>"; };
+		ACF532762183841B00C5CCE2 /* agendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaViewController.swift; sourceTree = "<group>"; };
+		ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMatViewController.swift; sourceTree = "<group>"; };
+		ACF5327A21839B5300C5CCE2 /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
 		FAB5122F217A42B200438AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,17 +76,20 @@
 			children = (
 				4786D5E51D7C53E400150B2F /* AppDelegate.swift */,
 				4786D5E71D7C53E400150B2F /* ViewController.swift */,
-				4786D5E91D7C53E400150B2F /* Main.storyboard */,
-				4786D5F71D7C564100150B2F /* SecondViewController.swift */,
 				4786D5EC1D7C53E400150B2F /* Assets.xcassets */,
 				4786D5EE1D7C53E400150B2F /* LaunchScreen.storyboard */,
 				4786D5F11D7C53E400150B2F /* Info.plist */,
+				4786D5E91D7C53E400150B2F /* Main.storyboard */,
+				4786D5F71D7C564100150B2F /* SecondViewController.swift */,
 				FAB5122F217A42B200438AA3 /* RegisterViewController.swift */,
 				ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */,
 				ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */,
-				ACD29945218260EA001B60C5 /* ToDoViewController.swift */,
 				ACD29947218269B9001B60C5 /* Materias.swift */,
 				ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */,
+				ACF532762183841B00C5CCE2 /* agendaViewController.swift */,
+				ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */,
+				ACD29945218260EA001B60C5 /* ToDoViewController.swift */,
+				ACF5327A21839B5300C5CCE2 /* calendarViewController.swift */,
 			);
 			path = LogInFormSwift;
 			sourceTree = "<group>";
@@ -162,7 +171,10 @@
 				4786D5F81D7C564100150B2F /* SecondViewController.swift in Sources */,
 				4786D5E81D7C53E400150B2F /* ViewController.swift in Sources */,
 				ACD2994A21826C55001B60C5 /* HoraFiTableViewCell.swift in Sources */,
+				ACF532792183852F00C5CCE2 /* RegisterMatViewController.swift in Sources */,
+				ACF5327B21839B5300C5CCE2 /* calendarViewController.swift in Sources */,
 				ACD29944218260C4001B60C5 /* RegisterHorarioViewController.swift in Sources */,
+				ACF532772183841B00C5CCE2 /* agendaViewController.swift in Sources */,
 				4786D5E61D7C53E400150B2F /* AppDelegate.swift in Sources */,
 				ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */,
 				FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */,

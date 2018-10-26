@@ -9,16 +9,27 @@
 import UIKit
 
 class ShowHorarioViewController: UIViewController {
-
+    
+    @IBOutlet weak var matinfo: UILabel!
+    @IBOutlet weak var profinfo: UILabel!
+    @IBOutlet weak var horainfo: UILabel!
+    @IBOutlet weak var salinfo: UILabel!
+    
+    var offisrtview: horario!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        /*
+        matinfo.text = offisrtview.materia
+        profinfo.text = offisrtview.profesor
+        horainfo.text = offisrtview.horario
+        salinfo.text = offisrtview.salon
+ */
     }
     
 
-    @IBAction func unsegueShowHorarioView(unwindSegue: UIStoryboardSegue){
-        
+    @IBAction func ShowmatinfoView(unwindSegue: UIStoryboardSegue){
+    
     }
 
 }
