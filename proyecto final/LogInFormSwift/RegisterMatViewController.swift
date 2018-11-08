@@ -27,8 +27,6 @@ class RegisterMatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Complete.alpha = 0
-  
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +35,7 @@ class RegisterMatViewController: UIViewController {
     }
     
     @IBAction func RegisterMat(_ sender: Any) {
+        //por si no tiene ningun campo lleno
         if (matField.text == "") && (horField.text == ""){
             let alert = UIAlertController(title: "Oops", message: "All fields must not be left blanck when proceeding!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
@@ -44,7 +43,18 @@ class RegisterMatViewController: UIViewController {
             return
        
         }
+        if (matField.text != "") && (horField.text != ""){
+            let newmat = matField.text
+            let newpro = proField.text
+            let newhor = horField.text
+            let newsal = salField.text
+            
+            newmatHor.append(horario(materia: newmat!, profesor: newpro!, horario: newhor!, salon: newsal!))
+            
+            print(newmatHor)
+        }
         else{
+            //por si tiene todos loscampos llenos
             if( (matField.text == "") && (horField.text == "")){
                 Complete.alpha = 1
             }
@@ -52,32 +62,34 @@ class RegisterMatViewController: UIViewController {
             
         }
 
-        /* esto es para registrar materias
-        if (matField.text == "") && (horField.text == ""){
-            let alert = UIAlertController(title: "Oops", message: "All fields must not be left blanck when proceeding!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
-            present(alert, animated: true,completion: nil)
-            return
-        }
-        
-        if (defaults.object(forKey: "horario") != nil) && (matField.text != "") && (horField.text != ""){
-            Complete.alpha = 0
-            newmateria = defaults.array(forKey: "materia") as! [String]
-            newhora = defaults.array(forKey: "hora") as! [String]
-        }
-        else{
-            if( (matField.text == "") && (horField.text == "")){
-                Complete.alpha = 1
-            }}
-        newmateria.insert(matField.text!, at: newmateria.count)
-        newhora.insert(horField.text!, at: newhora.count)
-        defaults.set(newmateria, forKey: "materia")
-        defaults.set(newhora, forKey: "hora")
-        dismiss(animated: true, completion: nil)
-        print(newmateria)
-        */
-       //newmatHor.append(horario(materia: newmateria, profesor: newprofesor, horario: newhora, salon: newsalon))
-        
     }
     
 }
+
+
+/* esto es para registrar materias
+ if (matField.text == "") && (horField.text == ""){
+ let alert = UIAlertController(title: "Oops", message: "All fields must not be left blanck when proceeding!", preferredStyle: .alert)
+ alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+ present(alert, animated: true,completion: nil)
+ return
+ }
+ 
+ if (defaults.object(forKey: "horario") != nil) && (matField.text != "") && (horField.text != ""){
+ Complete.alpha = 0
+ newmateria = defaults.array(forKey: "materia") as! [String]
+ newhora = defaults.array(forKey: "hora") as! [String]
+ }
+ else{
+ if( (matField.text == "") && (horField.text == "")){
+ Complete.alpha = 1
+ }}
+ newmateria.insert(matField.text!, at: newmateria.count)
+ newhora.insert(horField.text!, at: newhora.count)
+ defaults.set(newmateria, forKey: "materia")
+ defaults.set(newhora, forKey: "hora")
+ dismiss(animated: true, completion: nil)
+ print(newmateria)
+ */
+//newmatHor.append(horario(materia: newmateria, profesor: newprofesor, horario: newhora, salon: newsalon))
+
