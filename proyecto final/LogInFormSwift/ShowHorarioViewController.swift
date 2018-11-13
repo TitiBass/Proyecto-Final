@@ -27,9 +27,13 @@ class ShowHorarioViewController: UIViewController {
  */
     }
     
-
-    @IBAction func ShowmatinfoView(unwindSegue: UIStoryboardSegue){
-    
-    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "location" {
+            
+            let destino = segue.destination as! infoClassViewController
+            destino.offisrtview2 = offisrtview
+        }}
+        
 
 }

@@ -45,7 +45,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let indexPath = myTableView.indexPathForSelectedRow
             let destino = segue.destination as! ShowHorarioViewController
             destino.offisrtview = horariomateria[(indexPath?.row)!]
-            
         }
         }
    

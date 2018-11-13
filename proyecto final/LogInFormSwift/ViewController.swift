@@ -1,28 +1,24 @@
-//
-//  ViewController.swift
-//  LogInFormSwift
-//
-//  Created by Eng Tian Xi on 04/09/2016.
-//  Copyright © 2016 Eng Tian Xi. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
 
+class ViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     let defaults = UserDefaults.standard
     var registeredUsers = [String]()
     var passwordArr = [String]()
-    override func viewDidLoad() {
+    
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.black
         usernameField.delegate = self
         passwordField.delegate = self
+        
+        
     }
-
     @IBAction func proceedButtonTapped(_ sender: AnyObject) {
         if defaults.object(forKey: "usernames") != nil{
             registeredUsers = defaults.object(forKey: "usernames") as! [String]
@@ -64,7 +60,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
  
-  
+ 
+
+    
     
 
 }
