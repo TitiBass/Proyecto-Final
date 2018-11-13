@@ -10,6 +10,7 @@ import UIKit
 
 class ShowHorarioViewController: UIViewController {
     
+    
     @IBOutlet weak var matinfo: UILabel!
     @IBOutlet weak var profinfo: UILabel!
     @IBOutlet weak var horainfo: UILabel!
@@ -19,12 +20,12 @@ class ShowHorarioViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
+        
         matinfo.text = offisrtview.materia
         profinfo.text = offisrtview.profesor
         horainfo.text = offisrtview.horario
         salinfo.text = offisrtview.salon
- */
+ 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

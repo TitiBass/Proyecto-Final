@@ -592,6 +592,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="horainfo" destination="MpO-GM-8WC" id="Fmt-V5-cpF"/>
+                        <outlet property="matinfo" destination="urM-Rm-MOs" id="Ld2-0c-ewY"/>
+                        <outlet property="profinfo" destination="6RV-Fa-1gz" id="x6F-UL-RrK"/>
+                        <outlet property="salinfo" destination="W2I-pC-w7G" id="nf4-Jg-TUu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwO-YX-j1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="AIF-uE-bDM" userLabel="Exit" sceneMemberID="exit"/>
