@@ -145,6 +145,10 @@ class CalendarbossViewController: UIViewController,UICollectionViewDelegate, UIC
         currentMonth = Months[month]
         
         MonthLabel.text = "\(currentMonth)\(year)"
+        if weekday == 0{
+            weekday = 7
+        }
+        GetStartDateDayPosition()
       
     }
     
