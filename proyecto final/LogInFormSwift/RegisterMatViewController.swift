@@ -21,7 +21,6 @@ class RegisterMatViewController: UIViewController {
     var newhora = [String]()
     var newprofesor = [String]()
     var newsalon = [String]()
-    var newmatHor = [horario]()
 
     
     override func viewDidLoad() {
@@ -48,23 +47,20 @@ class RegisterMatViewController: UIViewController {
             let newpro = proField.text
             let newhor = horField.text
             let newsal = salField.text
-            
-            newmatHor.append(horario(materia: newmat!, profesor: newpro!, horario: newhor!, salon: newsal!))
-            
-            print(newmatHor)
+     
+     
+            horariomateria.append(horario(materia: newmat!, profesor: newpro!, horario: newhor!, salon: newsal!))
+  
         }
         else{
             //por si tiene todos loscampos llenos
             if( (matField.text == "") && (horField.text == "")){
                 Complete.alpha = 1
-            }
-            
-            
+            }}
         }
-
     }
     
-}
+
 
 
 /* esto es para registrar materias

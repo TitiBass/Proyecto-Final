@@ -8,18 +8,18 @@
 
 import UIKit
 
+
+var horariomateria = [horario]()
+
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 @IBOutlet weak var myTableView: UITableView!
     
-    var horariomateria = [horario]()
+    //var horariomateria = [horario]()
     var shop = [horario]()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        horariomateria.append(horario(materia: "Calculo", profesor: "chapatin", horario: "10 am", salon: "p101"))
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func logoutButtonTapped(_ sender: AnyObject) {
@@ -46,6 +46,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let destino = segue.destination as! ShowHorarioViewController
             destino.offisrtview = horariomateria[(indexPath?.row)!]
         }
+            
         }
    
     
@@ -54,6 +55,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         array.remove(at: 0)
     }
     @IBAction func unsegueSecondView(unwindSegue: UIStoryboardSegue){
-        
+   
     }
+    override func viewDidAppear(_ animated: Bool) {
+        myTableView.reloadData()
+    }
+    
 }

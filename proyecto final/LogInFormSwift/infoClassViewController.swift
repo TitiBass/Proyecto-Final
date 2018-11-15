@@ -13,7 +13,10 @@ class infoClassViewController: UIViewController {
     @IBOutlet weak var set_building: UILabel!
     @IBOutlet weak var building: UILabel!
     @IBOutlet weak var level_floor: UILabel!
-        var offisrtview2: horario!
+    
+    @IBOutlet weak var classrom: UILabel!
+    
+    var offisrtview2: horario!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,15 @@ class infoClassViewController: UIViewController {
         set_building.text = level
         building.text = build
         level_floor.text = level2
+        classrom.text = offisrtview2.salon
+        
+        if build == "a" || build == "b" || build == "c" || build == "d" || build == "f"{
+            set_building.text = "Principal"
+            
+        }else{
+                set_building.text = "Anexo de Ingenieria"
+                
+        }
         if level2 == "1"{
             level_floor.text = "Primera Planta"
             

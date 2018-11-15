@@ -616,10 +616,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapasur" translatesAutoresizingMaskIntoConstraints="NO" id="ily-iA-c7o">
-                                <rect key="frame" x="16" y="197" width="343" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conjunto: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-po-BDO">
                                 <rect key="frame" x="26" y="87" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -670,11 +666,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salon:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUT-nK-MDh">
+                                <rect key="frame" x="53" y="168" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-Uh-Y8O">
+                                <rect key="frame" x="104" y="168" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapasur" translatesAutoresizingMaskIntoConstraints="NO" id="ily-iA-c7o">
+                                <rect key="frame" x="16" y="261" width="343" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="building" destination="dsL-x2-y8F" id="6v7-oX-N7X"/>
+                        <outlet property="classrom" destination="oe5-Uh-Y8O" id="dpE-k6-avT"/>
                         <outlet property="level_floor" destination="k5O-GP-MlG" id="Egc-Wu-wR3"/>
                         <outlet property="set_building" destination="LcE-Hv-VRa" id="cFU-H9-XWZ"/>
                     </connections>
@@ -745,7 +760,7 @@
                                 <state key="normal" title="Registrar"/>
                                 <connections>
                                     <action selector="RegisterMat:" destination="gs1-5U-TGi" eventType="touchUpInside" id="d9W-VZ-C9d"/>
-                                    <segue destination="Pp5-Mc-IA7" kind="unwind" unwindAction="unsegueShowHorarioViewWithUnwindSegue:" id="vDf-sA-YD0"/>
+                                    <segue destination="Pp5-Mc-IA7" kind="unwind" unwindAction="unsegueSecondViewWithUnwindSegue:" id="DIU-jx-igO"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Materia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-Dk-0JU">
