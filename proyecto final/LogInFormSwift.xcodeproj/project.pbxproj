@@ -25,6 +25,11 @@
 		ACEB4F23219610C5003CD5E1 /* CalendarbossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB4F22219610C5003CD5E1 /* CalendarbossViewController.swift */; };
 		ACF532772183841B00C5CCE2 /* agendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF532762183841B00C5CCE2 /* agendaViewController.swift */; };
 		ACF532792183852F00C5CCE2 /* RegisterMatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */; };
+		FA09AFD021A8679D00C4C6B1 /* JuegoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09AFCF21A8679D00C4C6B1 /* JuegoController.swift */; };
+		FA09AFD421A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFD321A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg */; };
+		FA09AFD821A885D800C4C6B1 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFD721A885D800C4C6B1 /* Cross.png */; };
+		FA09AFDA21A885DD00C4C6B1 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFD921A885DC00C4C6B1 /* Nought.png */; };
+		FA09AFDC21A8863E00C4C6B1 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFDB21A8863E00C4C6B1 /* Board.png */; };
 		FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5122F217A42B200438AA3 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,11 @@
 		ACEB4F22219610C5003CD5E1 /* CalendarbossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarbossViewController.swift; sourceTree = "<group>"; };
 		ACF532762183841B00C5CCE2 /* agendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaViewController.swift; sourceTree = "<group>"; };
 		ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMatViewController.swift; sourceTree = "<group>"; };
+		FA09AFCF21A8679D00C4C6B1 /* JuegoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoController.swift; sourceTree = "<group>"; };
+		FA09AFD321A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1542384053_864693_1542384302_noticia_normal.jpg; sourceTree = SOURCE_ROOT; };
+		FA09AFD721A885D800C4C6B1 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = SOURCE_ROOT; };
+		FA09AFD921A885DC00C4C6B1 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = SOURCE_ROOT; };
+		FA09AFDB21A8863E00C4C6B1 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = SOURCE_ROOT; };
 		FAB5122F217A42B200438AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +96,12 @@
 				4786D5EC1D7C53E400150B2F /* Assets.xcassets */,
 				4786D5E71D7C53E400150B2F /* ViewController.swift */,
 				4786D5EE1D7C53E400150B2F /* LaunchScreen.storyboard */,
+				FA09AFDB21A8863E00C4C6B1 /* Board.png */,
+				FA09AFD321A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg */,
 				4786D5F11D7C53E400150B2F /* Info.plist */,
 				4786D5E91D7C53E400150B2F /* Main.storyboard */,
+				FA09AFD721A885D800C4C6B1 /* Cross.png */,
+				FA09AFD921A885DC00C4C6B1 /* Nought.png */,
 				4786D5F71D7C564100150B2F /* SecondViewController.swift */,
 				FAB5122F217A42B200438AA3 /* RegisterViewController.swift */,
 				ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */,
@@ -102,6 +116,7 @@
 				AC5D42142194EF200024FE1B /* CalendarVars.swift */,
 				ACEB4F22219610C5003CD5E1 /* CalendarbossViewController.swift */,
 				AC55B656219B808600CB6317 /* infoClassViewController.swift */,
+				FA09AFCF21A8679D00C4C6B1 /* JuegoController.swift */,
 			);
 			path = LogInFormSwift;
 			sourceTree = "<group>";
@@ -167,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4786D5F01D7C53E400150B2F /* LaunchScreen.storyboard in Resources */,
+				FA09AFD421A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg in Resources */,
 				4786D5ED1D7C53E400150B2F /* Assets.xcassets in Resources */,
+				FA09AFDC21A8863E00C4C6B1 /* Board.png in Resources */,
+				FA09AFDA21A885DD00C4C6B1 /* Nought.png in Resources */,
+				FA09AFD821A885D800C4C6B1 /* Cross.png in Resources */,
 				4786D5EB1D7C53E400150B2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +210,7 @@
 				AC55B657219B808600CB6317 /* infoClassViewController.swift in Sources */,
 				ACF532772183841B00C5CCE2 /* agendaViewController.swift in Sources */,
 				4786D5E61D7C53E400150B2F /* AppDelegate.swift in Sources */,
+				FA09AFD021A8679D00C4C6B1 /* JuegoController.swift in Sources */,
 				ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */,
 				FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */,
 				ACD29948218269B9001B60C5 /* Materias.swift in Sources */,

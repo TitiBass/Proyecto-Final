@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
 
     @IBAction func registerButtonTapped(_ sender: Any) {
         if (newUsernameField.text == "") && (newPswField.text == ""){
-            let alert = UIAlertController(title: "Oops", message: "All fields must not be left blanck when proceeding!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Lo sentimos", message: "Tienes que llegar todos los datos requeridos para poder continuar", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
             present(alert, animated: true,completion: nil)
             return

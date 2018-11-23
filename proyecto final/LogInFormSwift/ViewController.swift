@@ -1,6 +1,6 @@
 
 import UIKit
-
+// juego,salones ubicacación, guardar sesión, guardar materias en caso de terminar añadimos cosas en el calendario.
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }
             resetField()
-            let incorrectAlert = UIAlertController(title: "oops", message: "Your username and password does not match our records!", preferredStyle: .alert)
+            let incorrectAlert = UIAlertController(title: "Lo sentimos", message: "Por favor registra todos los campos.", preferredStyle: .alert)
             incorrectAlert.addAction(UIAlertAction(title: "ok", style: .default
                 , handler: nil))
             self.present(incorrectAlert, animated: true, completion: nil)

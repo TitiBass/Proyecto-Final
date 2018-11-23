@@ -20,6 +20,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        horariomateria.append(horario(materia: "Calculo", profesor: "Pedro", horario: "10:00", salon: "i203"))
+        horariomateria.append(horario(materia: "Dinamica", profesor: "Diego", horario: "11:30", salon: "j203"))
+        horariomateria.append(horario(materia: "Sistemas", profesor: "Julian", horario: "13:00", salon: "A203"))
+        horariomateria.append(horario(materia: "señales", profesor: "Chayito", horario: "15:00", salon: "B203"))
+    
     }
 
     @IBAction func logoutButtonTapped(_ sender: AnyObject) {
@@ -39,6 +44,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.labelCell.text = horariomateria[indexPath.row].materia
         return cell
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            horariomateria.remove(at: indexPath.row)
+            myTableView.reloadData()
+            
+        }}
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "infomaterias" {
