@@ -1,17 +1,15 @@
 //
-//  HoraFiTableViewCell.swift
+//  RecomenTableViewCell.swift
 //  LogInFormSwift
 //
-//  Created by Usuario invitado on 25/10/18.
+//  Created by macbook on 11/29/18.
 //  Copyright © 2018 Eng Tian Xi. All rights reserved.
 //
 
 import UIKit
 
-class HoraFiTableViewCell: UITableViewCell {
-@IBOutlet weak var labelCell: UILabel!
-    @IBOutlet weak var classday: UILabel!
-    @IBOutlet weak var classhrs: UILabel!
+class RecomenTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

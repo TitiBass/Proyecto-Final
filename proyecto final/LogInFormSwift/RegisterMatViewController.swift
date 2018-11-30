@@ -15,12 +15,14 @@ class RegisterMatViewController: UIViewController {
     @IBOutlet weak var proField: UITextField!
     @IBOutlet weak var salField: UITextField!
     @IBOutlet weak var Complete: UILabel!
+    @IBOutlet weak var diaField: UITextField!
     
     let defaults = UserDefaults.standard
     var newmateria = [String]()
     var newhora = [String]()
     var newprofesor = [String]()
     var newsalon = [String]()
+    
 
     
     override func viewDidLoad() {
@@ -47,9 +49,10 @@ class RegisterMatViewController: UIViewController {
             let newpro = proField.text
             let newhor = horField.text
             let newsal = salField.text
+            let newdia = diaField.text
      
      
-            horariomateria.append(horario(materia: newmat!, profesor: newpro!, horario: newhor!, salon: newsal!))
+            horariomateria.append(horario(materia: newmat!, profesor: newpro!, horario: newhor!, salon: newsal!, dias: newdia!))
   
         }
         else{

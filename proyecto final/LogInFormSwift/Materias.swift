@@ -12,5 +12,6 @@ struct horario{
     var profesor: String
     var horario: String
     var salon: String
+    var dias: String
 
 }

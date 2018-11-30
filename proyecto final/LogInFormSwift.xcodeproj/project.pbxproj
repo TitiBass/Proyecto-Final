@@ -18,6 +18,8 @@
 		AC55B657219B808600CB6317 /* infoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55B656219B808600CB6317 /* infoClassViewController.swift */; };
 		AC5D42132194EB230024FE1B /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D42122194EB230024FE1B /* DateCollectionViewCell.swift */; };
 		AC5D42152194EF200024FE1B /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D42142194EF200024FE1B /* CalendarVars.swift */; };
+		AC7F5CF221B1E4320035BBDD /* MapUniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F5CF121B1E4320035BBDD /* MapUniViewController.swift */; };
+		AC7F5CF421B1E4970035BBDD /* PositionUNAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7F5CF321B1E4970035BBDD /* PositionUNAM.swift */; };
 		ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */; };
 		ACD29944218260C4001B60C5 /* RegisterHorarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */; };
 		ACD29948218269B9001B60C5 /* Materias.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD29947218269B9001B60C5 /* Materias.swift */; };
@@ -31,6 +33,9 @@
 		FA09AFDA21A885DD00C4C6B1 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFD921A885DC00C4C6B1 /* Nought.png */; };
 		FA09AFDC21A8863E00C4C6B1 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = FA09AFDB21A8863E00C4C6B1 /* Board.png */; };
 		FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5122F217A42B200438AA3 /* RegisterViewController.swift */; };
+		FAD7E49C21B0843A00FAAD45 /* RecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7E49B21B0843A00FAAD45 /* RecomViewController.swift */; };
+		FAD7E49E21B084FE00FAAD45 /* RecomenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7E49D21B084FE00FAAD45 /* RecomenTableViewController.swift */; };
+		FAD7E4A021B0ABCE00FAAD45 /* ryocvmdmb_930x525-300x336.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAD7E49F21B0ABCD00FAAD45 /* ryocvmdmb_930x525-300x336.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,8 @@
 		AC55B656219B808600CB6317 /* infoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoClassViewController.swift; sourceTree = "<group>"; };
 		AC5D42122194EB230024FE1B /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC5D42142194EF200024FE1B /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		AC7F5CF121B1E4320035BBDD /* MapUniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUniViewController.swift; sourceTree = "<group>"; };
+		AC7F5CF321B1E4970035BBDD /* PositionUNAM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionUNAM.swift; sourceTree = "<group>"; };
 		ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHorarioViewController.swift; sourceTree = "<group>"; };
 		ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterHorarioViewController.swift; sourceTree = "<group>"; };
 		ACD29947218269B9001B60C5 /* Materias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materias.swift; sourceTree = "<group>"; };
@@ -60,6 +67,9 @@
 		FA09AFD921A885DC00C4C6B1 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = SOURCE_ROOT; };
 		FA09AFDB21A8863E00C4C6B1 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = SOURCE_ROOT; };
 		FAB5122F217A42B200438AA3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAD7E49B21B0843A00FAAD45 /* RecomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomViewController.swift; sourceTree = "<group>"; };
+		FAD7E49D21B084FE00FAAD45 /* RecomenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomenTableViewController.swift; sourceTree = "<group>"; };
+		FAD7E49F21B0ABCD00FAAD45 /* ryocvmdmb_930x525-300x336.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ryocvmdmb_930x525-300x336.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 		4786D5E41D7C53E400150B2F /* LogInFormSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7E49F21B0ABCD00FAAD45 /* ryocvmdmb_930x525-300x336.jpg */,
 				4786D5E51D7C53E400150B2F /* AppDelegate.swift */,
 				4786D5EC1D7C53E400150B2F /* Assets.xcassets */,
 				4786D5E71D7C53E400150B2F /* ViewController.swift */,
@@ -106,6 +117,7 @@
 				FAB5122F217A42B200438AA3 /* RegisterViewController.swift */,
 				ACD299412182609B001B60C5 /* ShowHorarioViewController.swift */,
 				ACD29943218260C4001B60C5 /* RegisterHorarioViewController.swift */,
+				AC55B656219B808600CB6317 /* infoClassViewController.swift */,
 				ACD29947218269B9001B60C5 /* Materias.swift */,
 				ACD2994921826C55001B60C5 /* HoraFiTableViewCell.swift */,
 				ACF532782183852F00C5CCE2 /* RegisterMatViewController.swift */,
@@ -115,8 +127,11 @@
 				AC5D42122194EB230024FE1B /* DateCollectionViewCell.swift */,
 				AC5D42142194EF200024FE1B /* CalendarVars.swift */,
 				ACEB4F22219610C5003CD5E1 /* CalendarbossViewController.swift */,
-				AC55B656219B808600CB6317 /* infoClassViewController.swift */,
 				FA09AFCF21A8679D00C4C6B1 /* JuegoController.swift */,
+				FAD7E49B21B0843A00FAAD45 /* RecomViewController.swift */,
+				FAD7E49D21B084FE00FAAD45 /* RecomenTableViewController.swift */,
+				AC7F5CF321B1E4970035BBDD /* PositionUNAM.swift */,
+				AC7F5CF121B1E4320035BBDD /* MapUniViewController.swift */,
 			);
 			path = LogInFormSwift;
 			sourceTree = "<group>";
@@ -183,6 +198,7 @@
 			files = (
 				4786D5F01D7C53E400150B2F /* LaunchScreen.storyboard in Resources */,
 				FA09AFD421A885C500C4C6B1 /* 1542384053_864693_1542384302_noticia_normal.jpg in Resources */,
+				FAD7E4A021B0ABCE00FAAD45 /* ryocvmdmb_930x525-300x336.jpg in Resources */,
 				4786D5ED1D7C53E400150B2F /* Assets.xcassets in Resources */,
 				FA09AFDC21A8863E00C4C6B1 /* Board.png in Resources */,
 				FA09AFDA21A885DD00C4C6B1 /* Nought.png in Resources */,
@@ -201,10 +217,13 @@
 				ACEB4F23219610C5003CD5E1 /* CalendarbossViewController.swift in Sources */,
 				4786D5F81D7C564100150B2F /* SecondViewController.swift in Sources */,
 				AC1BF5582194C7BA00673A48 /* FirsthomeworkViewController.swift in Sources */,
+				FAD7E49E21B084FE00FAAD45 /* RecomenTableViewController.swift in Sources */,
 				4786D5E81D7C53E400150B2F /* ViewController.swift in Sources */,
 				ACD2994A21826C55001B60C5 /* HoraFiTableViewCell.swift in Sources */,
 				ACF532792183852F00C5CCE2 /* RegisterMatViewController.swift in Sources */,
 				AC1BF55A2194CAFC00673A48 /* SecondhomeworkViewController.swift in Sources */,
+				FAD7E49C21B0843A00FAAD45 /* RecomViewController.swift in Sources */,
+				AC7F5CF421B1E4970035BBDD /* PositionUNAM.swift in Sources */,
 				ACD29944218260C4001B60C5 /* RegisterHorarioViewController.swift in Sources */,
 				AC5D42152194EF200024FE1B /* CalendarVars.swift in Sources */,
 				AC55B657219B808600CB6317 /* infoClassViewController.swift in Sources */,
@@ -214,6 +233,7 @@
 				ACD299422182609B001B60C5 /* ShowHorarioViewController.swift in Sources */,
 				FAB51230217A42B200438AA3 /* RegisterViewController.swift in Sources */,
 				ACD29948218269B9001B60C5 /* Materias.swift in Sources */,
+				AC7F5CF221B1E4320035BBDD /* MapUniViewController.swift in Sources */,
 				AC5D42132194EB230024FE1B /* DateCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

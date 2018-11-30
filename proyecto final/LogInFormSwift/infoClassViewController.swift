@@ -37,17 +37,17 @@ class infoClassViewController: UIViewController {
             set_building.text = "Principal"
             
             if build == "a" || build == "A"{
-                MapBuild.image = UIImage(named: "A")
+                MapBuild.image = UIImage(named: "a")
             }else if build == "b" || build == "B"{
-                MapBuild.image = UIImage(named: "B")
+                MapBuild.image = UIImage(named: "b")
             }else if build == "c" || build == "C"{
-                MapBuild.image = UIImage(named: "A")
+                MapBuild.image = UIImage(named: "c")
             }else if build == "d" || build == "D"{
-                MapBuild.image = UIImage(named: "A")
+                MapBuild.image = UIImage(named: "d")
             }else if build == "e" || build == "E"{
-                MapBuild.image = UIImage(named: "A")
+                MapBuild.image = UIImage(named: "e")
             }else if build == "f" || build == "F"{
-                MapBuild.image = UIImage(named: "A")
+                MapBuild.image = UIImage(named: "Anexo")
             }
         }else{
                 set_building.text = "Anexo de Ingenieria"
@@ -81,6 +81,8 @@ class infoClassViewController: UIViewController {
                 MapBuild.image = UIImage(named: "t")
             }else if build == "u" || build == "U"{
                 MapBuild.image = UIImage(named: "u")
+            }else if build == "w" || build == "W"{
+                MapBuild.image = UIImage(named: "w")
             }else if build == "v" || build == "V"{
                 MapBuild.image = UIImage(named: "v")
             }else if build == "y" || build == "Y"{

@@ -8,7 +8,7 @@
 
 import UIKit
 
-var listhomework = ["serie iontegral"]
+var listhomework = ["serie integral","Tarea de Chayito"]
 class FirsthomeworkViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var homework: UITableView!

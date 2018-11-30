@@ -19,11 +19,17 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var shop = [horario]()
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        horariomateria.append(horario(materia: "Calculo", profesor: "Pedro", horario: "10:00", salon: "i203"))
-        horariomateria.append(horario(materia: "Dinamica", profesor: "Diego", horario: "11:30", salon: "j203"))
-        horariomateria.append(horario(materia: "Sistemas", profesor: "Julian", horario: "13:00", salon: "A203"))
-        horariomateria.append(horario(materia: "señales", profesor: "Chayito", horario: "15:00", salon: "B203"))
+        if tab == 0 {
+            horariomateria.append(horario(materia: "Calculo", profesor: "Pedro", horario: "10:00", salon: "i203", dias: "Lu, Mi"))
+            horariomateria.append(horario(materia: "Dinamica", profesor: "Diego", horario: "11:30", salon: "j203", dias: "Lu, Vi"))
+            horariomateria.append(horario(materia: "Sistemas", profesor: "Julian", horario: "13:00", salon: "A203", dias: "Ma, Ju"))
+            horariomateria.append(horario(materia: "señales", profesor: "Chayito", horario: "15:00", salon: "B203", dias: "Ma, Ju"))
+        }
+        tab = 1
+        sesion = 1
+        sesi.set(sesion, forKey: "Active")
     
     }
 
@@ -42,6 +48,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "horariofinal", for: indexPath) as! HoraFiTableViewCell
         
         cell.labelCell.text = horariomateria[indexPath.row].materia
+        cell.classday.text = horariomateria[indexPath.row].dias
+        cell.classhrs.text = horariomateria[indexPath.row].horario
+        
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
@@ -72,4 +81,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         myTableView.reloadData()
     }
     
+    @IBAction func Loggof(_ sender: UIButton) {
+        sesion = 0
+          sesi.set(sesion, forKey: "Active")
+        
+    }
 }
